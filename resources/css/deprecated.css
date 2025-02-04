@@ -1,0 +1,177 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Universal Styles */
+body {
+    font-family: Merriweather, serif;
+}
+
+/* Site Header */
+
+header {
+    background-image:url('../masthead.png');
+    background-size:cover;
+    height:216px;
+    position:sticky;
+    top:0;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+}
+
+#header-logo {
+ height:4em;
+ object-fit:scale-down;
+ margin:32px;
+}
+
+nav {
+    display:flex;
+    flex-direction:row;
+    margin:0px 4em;
+}
+
+.nav-item {
+    color:white;
+    padding:12px;
+    font-weight:300;
+    word-spacing:0.2em;
+}
+
+/* Page Title */
+
+div.page-title {
+    background-image:url('../masthead.png');
+    background-size:cover;
+    background-position:0 -216px;
+    height:12em;
+    clip-path:ellipse(100% 75% at 35% 0%);
+    position:relative;
+    z-index:0;
+}
+
+.page-title h1 {
+    font-size:3em;
+    font-weight:600;
+    color:white;
+    padding:8px 72px;
+}
+
+.page-title h2 {
+    font-size:1.5em;
+    font-weight:400;
+    color:white;
+    padding:8px 72px;
+    font-weight:400;
+}
+
+.overflow-container {
+    height:175px;
+    overflow:visible;
+}
+
+/* Page Content */
+
+.body-content {
+    position:relative;
+    font-weight:300;
+}
+
+h3 {
+    padding:.5em 0;
+    font-size:1.75em;
+}
+
+p {
+    padding:.25em 0;
+    font-size:1.125em;
+}
+
+.call-out {
+    font-weight:800;
+}
+
+/* Footer */
+
+footer {
+    display:flex;
+    background-color:black;
+    padding:36px 72px;
+    position:relative;
+}
+
+.footer-title {
+    display:flex;
+    color:white;
+    flex-direction:column;
+    align-items:flex-end;
+    border-right: 1px solid white;
+    padding: 0px 18px 0px 0px;
+}
+
+.footer-title h4 {
+    padding:.25em 0;
+}
+
+#footer-logo {
+    height:3em;
+    object-fit:contain;
+    padding:.5em 0;
+}
+
+.footer-link {
+    text-decoration:none;
+    color:white !important;
+}
+
+/* Page-Specific Styles */
+/* Home Page */
+
+#home-intro {
+    margin:6px 72px 36px;
+}
+
+#home-links-container {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    margin:36px 72px;
+}
+
+.home-link {
+    display:flex;
+    flex-direction:column;
+    align-content:space-between;
+    width:33%;
+    height:432px;
+    justify-content:space-between;
+}
+
+.home-link-img {
+    width:100%;
+    height:20em;
+    object-fit:cover;
+    object-position:50% 65%;
+    padding:8px;
+}
+
+.home-link-caption {
+    padding:8px;
+}
+
+.home-link-button {
+    background-color:rgb(60,75,97);
+    border-radius:2em;
+    margin:8px;
+}
+
+.home-link-button h4 {
+    width:144px;
+    margin:8px auto;
+    text-align:center;
+    color:white;
+    font-weight:400;
+}
