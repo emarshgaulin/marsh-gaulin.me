@@ -60,7 +60,7 @@ a.footer-title:active {
 }
 
 /*Small Screen Styles*/
-@media (max-width:575px) {
+@media (max-width:768px) {
 
     /*Header & Nav*/
     header {
@@ -150,7 +150,7 @@ a.footer-title:active {
 }
 
 /*Medium Screen Styles*/
-@media (min-width:576px) and (max-width:1199px) {
+@media (min-width:769px) and (max-width:1279px) {
 
     /*Header & Nav*/
     header {
