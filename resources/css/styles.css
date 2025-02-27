@@ -1,13 +1,11 @@
-/*Universal Styles*/
-
+/* Universal Styling */
 * {
-    margin:0;
     padding:0;
-    box-sizing:border-box;
+    margin:0;
 }
 
 body {
-    font-family:'Merriweather',serif;
+    font-family:'Merriweather', 'Merriweather Sans', Arial, sans-serif;
 }
 
 #navLinks {
@@ -19,316 +17,194 @@ body {
     text-decoration:none;
 }
 
-.body-content p {
-    margin: .5em 0;
-    line-height:1.375em;
-}
-
-#home-links-container {
-    display:flex;
-    justify-content:space-evenly;
-}
-
-.home-link {
-    display:flex;
-    justify-content:flex-start;
-    flex-direction:column;
-    flex: 1 1;
-}
-
-.home-link-img {
-    flex: 1 1;
-    object-fit:cover;
-    width:100%;
-}
-
-footer {
-    background-color:black;
-}
-
-a.footer-title{
-    text-decoration:none;
-    color:white;
-}
-
-a.footer-title:hover {
-    color:#cbd4e0;
-}
-
-a.footer-title:active {
+.call-out {
     color:#3c4b61;
+    font-style:italic;
 }
 
-/*Small Screen Styles*/
-@media screen and (max-width:768px) {
+/* Small Screen Styling */
+@media screen and (max-width:1199px) {
 
-    /*Header & Nav*/
+    html {
+        font-size:40px;
+    }
+
+    /* Header and Nav */
     header {
-        background-image:url('../masthead-2a-mobile.png');
+        background-image:url('../masthead-2a-small.png');
         background-size:100% auto;
-        background-position:center bottom;
+        background-position: center bottom;
+        padding:.5rem;
     }
 
     #header-logo {
         width:50%;
-        margin:2em 25% 2em 25%;
-    }
-
-    nav {
-        padding-bottom:1em;
+        margin: .5rem 25%;
     }
 
     #navLinks {
         flex-direction:column;
         align-items:stretch;
+        width:100%;
+        padding-top:1rem;
     }
 
     .navItem {
+        background-color:rgba(255,255,255,10%);
+        flex-grow:1;
+        flex-shrink:1;
         text-align:center;
-        background-color:rgba(256,256,256,10%);
-        margin:2px 12px;
-        padding:.25em;
+        margin:.125rem 0;
+        padding:.125rem;
+        font-size:1rem;
+        font-family:'Merriweather';
+    }
+
+    .navItem:hover {
+        background-color:rgba(255,255,255,25%);
     }
 
     .navItem a {
         display:block;
-        color:rgba(256,256,256,75%);
-    }
-
-    .navItem:hover {
-        background-color:rgba(256,256,256,25%);
+        color:rgba(255,255,255,75%);
     }
 
     .navItem a:active {
         color:white;
-        background-color:rgba(256,256,256,40%);
+        background-color:rgba(255,255,255,40%);
     }
 
-    /*Page Title*/
+    /* Page Title and Main Content */
     div.page-title {
-        background-image:url('../masthead-2b-mobile.png');
-        background-size:cover;
-        background-position:center top;
-        padding:.5em 1.5em 1em;
+        background-image:url('../masthead-2b-small.png');
+        background-size:100% auto;
+        background-position: center top;
+        padding:.5rem;
     }
 
     h1.page-title {
-        font-size:1.75em;
-        font-weight:600;
+        text-align:center;
         color:white;
+        font-size:2.25rem;
+        line-height:2.5rem;
+        font-family:'Merriweather', serif;
+        font-weight:800;
+        margin:.5rem;
     }
 
     h2.page-title {
-        font-size:1.125em;
-        font-weight:400;
+        text-align:center;
         color:white;
+        font-family:'Merriweather';
+        font-size:1.125rem;
+        font-weight:400;
+        margin:.5rem;
+    }
+    
+    section.body-content {
+        padding:1.5rem;
     }
 
-    /*Main Content*/
-    .body-content {
-        margin: 1em 1.5em;
+    #home-intro h3 {
+        font-family:'Merriweather';
+        font-size:1.5rem;
+        font-weight:600;
+        margin-bottom:.5rem;
+    }
+
+    #home-intro p {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        font-size:1 rem;
+        margin:.5rem 0;
     }
 
     #home-links-container {
-        flex-direction:column;
-    }
-
-    .home-link {
-        padding:1em 1em 2em;
-    }
-
-    /*Footer*/
-    footer {
-        padding:2em;
-        text-align:center;
-    }
-
-    #footer-logo {
-        width:25%;
-    }
-
-}
-
-/*Medium Screen Styles*/
-@media screen and (min-width:769px) and (max-width:1279px) {
-
-    /*Header & Nav*/
-    header {
-        background-image:url('../masthead-2a-tablet.png');
-        background-size:cover;
-        background-position:center bottom
-    }
-
-    #header-logo {
-        width:33%;
-        margin:2em 33.5% 2em 33.5%;
-    }
-
-    #navLinks {
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:space-evenly;
-    }
-
-    nav {
-        padding:0 .5em .5em;
-    }
-
-    .navItem {
-        text-align:center;
-        background-color:rgba(256,256,256,10%);
-        margin:4px;
-        padding:.25em;
-        flex-grow:1;
-    }
-
-    .navItem a {
-        display:block;
-        color:rgba(256,256,256,75%);
-    }
-
-    .navItem:hover {
-        background-color:rgba(256,256,256,25%);
-    }
-
-    .navItem a:active {
-        color:white;
-        background-color:rgba(256,256,256,40%);
-    }
-
-    /*Page Title*/
-    div.page-title {
-        background-image:url('../masthead-2b-tablet.png');
-        background-size:cover;
-        background-position:center top;
-        padding:.5em 2.5em 1em;
-    }
-    h1.page-title {
-        font-size:2.25em;
-        font-weight:600;
-        color:white;
-        margin-bottom:.25em;
-    }
-
-    h2.page-title {
-        font-size:1.25em;
-        font-weight:400;
-        color:white;
-    }
-
-    /*Main Content*/
-    .body-content {
-        margin: 1em 2.5em;
-    }
-
-    .home-link {
-        padding:.25em .75em;
-    }
-
-    /*Footer*/
-    footer {
-        padding:1.5em 2.5em;
-    }
-
-    #footer-logo {
-        width:15%;
-    }
-
-}
-
-/*Large Screen Styles*/
-@media screen and (min-width:1200px) {
-
-    /*Header & Nav*/
-    header {
-        background-image:url('../masthead-desktop.png');
-        background-size:cover;
-        position:fixed;
-        width:100%;
-        top:0;
-        z-index:2;
         display:flex;
         flex-direction:column;
     }
 
-    #header-logo {
-        width:10%;
-        margin:3em 45% 1.5em 45%;
-    }
-
-    #navLinks {
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:flex-start;
-    }
-
-    nav {
-        padding-bottom:2em;
-        margin-left:72px;
-    }
-
-    .navItem {
-        margin-right:4em;
-    }
-
-    .navItem a {
-        color:white;
-    }
-
-    .navItem a:hover {
-        color:#cbd4e0;
-    }
-
-    .navItem a:active {
-        color:#88aee3;
-    }
-
-    /*Page Title*/
-    div.page-title {
-        background-image:url('../masthead-desktop.png');
-        background-size:cover;
-        width:100%;
-        height:24em;
-        clip-path:ellipse(100% 95% at 35% 0%);
-        z-index:0;
-    }
-
-    h1.page-title {
-        font-size:3em;
-        font-weight:600;
-        color:white;
-        padding-top:4.25em;
-        margin-left:72px;
-    }
-    
-    h2.page-title {
-        font-size:1.5em;
-        font-weight:400;
-        color:white;
-        font-weight:400;
-        padding-top:.25em;
-        margin-left:72px;
-    }
-
-    /*Main Content*/
-    .body-content {
-        margin:1.5em 72px;
-    }
-
     .home-link {
-        margin:1.5em
+        display:flex;
+        flex-direction:column;
+        margin-bottom:4rem;
+    }
+
+    .home-link-img {
+        margin-bottom:1rem;
     }
 
     .home-link-caption {
-        padding: .5em 0;
+        margin-bottom:1rem;
+        text-align:center;
+        font-family:'Merriweather Sans';
+        font-weight:350;
     }
 
-    /*Footer*/
-    footer {
-        padding:1.5em 3em;
+    .home-link-button {
+        font-size:1rem;
+        font-family:'Merriweather Sans';
+        font-weight:400;
+        padding:.5rem;
+        border-radius:.375rem;
+        border-width:2px;
+        background-color:#cbd4e0;
+        border-color:#3c4b61;
+        color:#3c4b61;
+        text-transform:uppercase;
     }
 
-    #footer-logo {
-        width:10%;
+    .home-link-button:hover {
+        cursor:pointer;
+        background-color:white;
     }
+
+    .home-link-button:active {
+        background-color:#3c4b61;
+        color:white;
+    }
+
+    /* Footer */
+
+}
+
+/* Medium Screen Styling */
+@media screen and (min-width:1200px) and (max-width:1399px) {
+    
+    html {
+        font-size:18px;
+    }
+
+    header {
+        background-image:url('../masthead-2a-medium.png');
+        background-size:100% auto;
+        background-position:center bottom;
+    }
+
+    div.page-title {
+        background-image:url('../masthead-2b-medium.png');
+        background-size:100% auto;
+        background-position:center top;
+    }
+}
+
+/* Large Screen Styling */
+@media screen and (min-width:1400px) {
+
+    html {
+        font-size:16px;
+    }
+
+    header {
+        background-image:url('../masthead-2a-large.png');
+        background-size:100% auto;
+        background-position:center bottom;
+    }
+
+    div.page-title {
+        background-image:url('../masthead-2b-large.png');
+        background-size:100% auto;
+        background-position:center top;
+    }
+
 }

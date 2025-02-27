@@ -1,177 +1,334 @@
+/*Universal Styles*/
+
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* Universal Styles */
 body {
-    font-family: Merriweather, serif;
+    font-family:'Merriweather',serif;
 }
 
-/* Site Header */
-
-header {
-    background-image:url('../masthead.png');
-    background-size:cover;
-    height:216px;
-    position:sticky;
-    top:0;
-    z-index:2;
+#navLinks {
     display:flex;
-    flex-direction:column;
+    list-style-type:none;
 }
 
-#header-logo {
- height:4em;
- object-fit:scale-down;
- margin:32px;
-}
-
-nav {
-    display:flex;
-    flex-direction:row;
-    margin:0px 4em;
-}
-
-.nav-item {
-    color:white;
-    padding:12px;
-    font-weight:300;
-    word-spacing:0.2em;
-}
-
-/* Page Title */
-
-div.page-title {
-    background-image:url('../masthead.png');
-    background-size:cover;
-    background-position:0 -216px;
-    height:12em;
-    clip-path:ellipse(100% 75% at 35% 0%);
-    position:relative;
-    z-index:0;
-}
-
-.page-title h1 {
-    font-size:3em;
-    font-weight:600;
-    color:white;
-    padding:8px 72px;
-}
-
-.page-title h2 {
-    font-size:1.5em;
-    font-weight:400;
-    color:white;
-    padding:8px 72px;
-    font-weight:400;
-}
-
-.overflow-container {
-    height:175px;
-    overflow:visible;
-}
-
-/* Page Content */
-
-.body-content {
-    position:relative;
-    font-weight:300;
-}
-
-h3 {
-    padding:.5em 0;
-    font-size:1.75em;
-}
-
-p {
-    padding:.25em 0;
-    font-size:1.125em;
-}
-
-.call-out {
-    font-weight:800;
-}
-
-/* Footer */
-
-footer {
-    display:flex;
-    background-color:black;
-    padding:36px 72px;
-    position:relative;
-}
-
-.footer-title {
-    display:flex;
-    color:white;
-    flex-direction:column;
-    align-items:flex-end;
-    border-right: 1px solid white;
-    padding: 0px 18px 0px 0px;
-}
-
-.footer-title h4 {
-    padding:.25em 0;
-}
-
-#footer-logo {
-    height:3em;
-    object-fit:contain;
-    padding:.5em 0;
-}
-
-.footer-link {
+.navItem a {
     text-decoration:none;
-    color:white !important;
 }
 
-/* Page-Specific Styles */
-/* Home Page */
-
-#home-intro {
-    margin:6px 72px 36px;
+.body-content p {
+    margin: .5em 0;
+    line-height:1.375em;
 }
 
 #home-links-container {
     display:flex;
-    justify-content:space-between;
-    flex-direction:row;
-    margin:36px 72px;
+    justify-content:space-evenly;
 }
 
 .home-link {
     display:flex;
+    justify-content:flex-start;
     flex-direction:column;
-    align-content:space-between;
-    width:33%;
-    height:432px;
-    justify-content:space-between;
+    flex: 1 1;
 }
 
 .home-link-img {
-    width:100%;
-    height:20em;
+    flex: 1 1;
     object-fit:cover;
-    object-position:50% 65%;
-    padding:8px;
+    width:100%;
 }
 
-.home-link-caption {
-    padding:8px;
+footer {
+    background-color:black;
 }
 
-.home-link-button {
-    background-color:rgb(60,75,97);
-    border-radius:2em;
-    margin:8px;
-}
-
-.home-link-button h4 {
-    width:144px;
-    margin:8px auto;
-    text-align:center;
+a.footer-title{
+    text-decoration:none;
     color:white;
-    font-weight:400;
+}
+
+a.footer-title:hover {
+    color:#cbd4e0;
+}
+
+a.footer-title:active {
+    color:#3c4b61;
+}
+
+/*Small Screen Styles*/
+@media screen and (max-width:1199px) {
+
+    /*Header & Nav*/
+    header {
+        background-image:url('../masthead-2a-mobile.png');
+        background-size:100% auto;
+        background-position:center bottom;
+    }
+
+    #header-logo {
+        width:50%;
+        margin:2em 25% 2em 25%;
+    }
+
+    nav {
+        padding-bottom:1em;
+    }
+
+    #navLinks {
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .navItem {
+        text-align:center;
+        background-color:rgba(256,256,256,10%);
+        margin:2px 12px;
+        padding:.25em;
+    }
+
+    .navItem a {
+        display:block;
+        color:rgba(256,256,256,75%);
+    }
+
+    .navItem:hover {
+        background-color:rgba(256,256,256,25%);
+    }
+
+    .navItem a:active {
+        color:white;
+        background-color:rgba(256,256,256,40%);
+    }
+
+    /*Page Title*/
+    div.page-title {
+        background-image:url('../masthead-2b-mobile.png');
+        background-size:cover;
+        background-position:center top;
+        padding:.5em 1.5em 1em;
+    }
+
+    h1.page-title {
+        font-size:1.75em;
+        font-weight:600;
+        color:white;
+    }
+
+    h2.page-title {
+        font-size:1.125em;
+        font-weight:400;
+        color:white;
+    }
+
+    /*Main Content*/
+    .body-content {
+        margin: 1em 1.5em;
+    }
+
+    #home-links-container {
+        flex-direction:column;
+    }
+
+    .home-link {
+        padding:1em 1em 2em;
+    }
+
+    /*Footer*/
+    footer {
+        padding:2em;
+        text-align:center;
+    }
+
+    #footer-logo {
+        width:25%;
+    }
+
+}
+
+/*Medium Screen Styles*/
+@media screen and (min-width:1200px) and (max-width:1399px) {
+
+    /*Header & Nav*/
+    header {
+        background-image:url('../masthead-2a-tablet.png');
+        background-size:cover;
+        background-position:center bottom
+    }
+
+    #header-logo {
+        width:33%;
+        margin:2em 33.5% 2em 33.5%;
+    }
+
+    #navLinks {
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+    }
+
+    nav {
+        padding:0 .5em .5em;
+    }
+
+    .navItem {
+        text-align:center;
+        background-color:rgba(256,256,256,10%);
+        margin:4px;
+        padding:.25em;
+        flex-grow:1;
+    }
+
+    .navItem a {
+        display:block;
+        color:rgba(256,256,256,75%);
+    }
+
+    .navItem:hover {
+        background-color:rgba(256,256,256,25%);
+    }
+
+    .navItem a:active {
+        color:white;
+        background-color:rgba(256,256,256,40%);
+    }
+
+    /*Page Title*/
+    div.page-title {
+        background-image:url('../masthead-2b-tablet.png');
+        background-size:cover;
+        background-position:center top;
+        padding:.5em 2.5em 1em;
+    }
+    h1.page-title {
+        font-size:2.25em;
+        font-weight:600;
+        color:white;
+        margin-bottom:.25em;
+    }
+
+    h2.page-title {
+        font-size:1.25em;
+        font-weight:400;
+        color:white;
+    }
+
+    /*Main Content*/
+    .body-content {
+        margin: 1em 2.5em;
+    }
+
+    .home-link {
+        padding:.25em .75em;
+    }
+
+    /*Footer*/
+    footer {
+        padding:1.5em 2.5em;
+    }
+
+    #footer-logo {
+        width:15%;
+    }
+
+}
+
+/*Large Screen Styles*/
+@media screen and (min-width:1400px) {
+
+    /*Header & Nav*/
+    header {
+        background-image:url('../masthead-desktop.png');
+        background-size:cover;
+        position:fixed;
+        width:100%;
+        top:0;
+        z-index:2;
+        display:flex;
+        flex-direction:column;
+    }
+
+    #header-logo {
+        width:10%;
+        margin:3em 45% 1.5em 45%;
+    }
+
+    #navLinks {
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+    }
+
+    nav {
+        padding-bottom:2em;
+        margin-left:72px;
+    }
+
+    .navItem {
+        margin-right:4em;
+    }
+
+    .navItem a {
+        color:white;
+    }
+
+    .navItem a:hover {
+        color:#cbd4e0;
+    }
+
+    .navItem a:active {
+        color:#88aee3;
+    }
+
+    /*Page Title*/
+    div.page-title {
+        background-image:url('../masthead-desktop.png');
+        background-size:cover;
+        width:100%;
+        height:24em;
+        clip-path:ellipse(100% 95% at 35% 0%);
+        z-index:0;
+    }
+
+    h1.page-title {
+        font-size:3em;
+        font-weight:600;
+        color:white;
+        padding-top:4.25em;
+        margin-left:72px;
+    }
+    
+    h2.page-title {
+        font-size:1.5em;
+        font-weight:400;
+        color:white;
+        font-weight:400;
+        padding-top:.25em;
+        margin-left:72px;
+    }
+
+    /*Main Content*/
+    .body-content {
+        margin:1.5em 72px;
+    }
+
+    .home-link {
+        margin:1.5em
+    }
+
+    .home-link-caption {
+        padding: .5em 0;
+    }
+
+    /*Footer*/
+    footer {
+        padding:1.5em 3em;
+    }
+
+    #footer-logo {
+        width:10%;
+    }
 }
