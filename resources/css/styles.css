@@ -165,6 +165,23 @@ body {
     }
 
     /* Footer */
+    footer {
+        background-color:black;
+        padding:1.5rem;
+    }
+
+    #footer-logo {
+        height:2rem;
+    }
+
+    a.footer-title {
+        color:white;
+        text-decoration:none;
+    }
+
+    div.footer-title {
+        text-align:center;
+    }
 
 }
 
