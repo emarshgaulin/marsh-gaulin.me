@@ -22,6 +22,10 @@ body {
     font-style:italic;
 }
 
+#home-links-container {
+    display:flex;
+}
+
 /* Small Screen Styling */
 @media screen and (max-width:1199px) {
 
@@ -120,7 +124,6 @@ body {
     }
 
     #home-links-container {
-        display:flex;
         flex-direction:column;
     }
 
@@ -192,12 +195,42 @@ body {
         font-size:18px;
     }
 
+    /* Header and Nav */
     header {
         background-image:url('../masthead-2a-medium.png');
         background-size:100% auto;
         background-position:center bottom;
+        padding:1.5rem;
     }
 
+    #header-logo {
+        width:33%;
+        margin:.5rem 33%;
+    }
+
+    #navLinks {
+        flex-direction:row;
+        justify-content:space-between;
+        padding:1rem;
+    }
+
+    .navItem {
+        flex-grow:1;
+        flex-shrink:1;
+        background-color:rgba(255,255,255,10%);
+        text-align:center;
+        margin:0 .5rem;
+    }
+
+    .navItem a {
+        display:block;
+        color:rgba(255,255,255,75%);
+        width:100%;
+    }
+
+
+
+    /* Page Title and Main Content */
     div.page-title {
         background-image:url('../masthead-2b-medium.png');
         background-size:100% auto;
