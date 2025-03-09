@@ -339,16 +339,65 @@ a.footer-title {
         font-size:16px;
     }
 
-    header {
-        background-image:url('../masthead-2a-large.png');
-        background-size:100% auto;
-        background-position:center bottom;
-    }
-
     div.page-title {
         background-image:url('../masthead-2b-large.png');
         background-size:100% auto;
         background-position:center top;
     }
 
+    /* Header and Nav Bar */
+    header {
+        position:sticky;
+        top:0;
+        background-image:url('../masthead-2a-large.png');
+        background-size:100% auto;
+        background-position:center bottom;
+        width:100%;
+        z-index:10;
+    }
+
+    #header-logo {
+        width:15%;
+        margin:1.5rem 42.5% 0;
+    }
+
+    #navLinks {
+        padding:.5rem 3rem;
+        justify-content:flex-start;
+    }
+    
+    .navItem a {
+        display:inline-block;
+        color:white;
+        margin:1rem;
+    }
+
+    .navItem a:hover {
+        font-weight:600;
+    }
+
+    .navItem a:active {
+        background-color:rgba(255,255,255,10%);
+    }
+
+    /* Page Title and Main Content */
+    div.page-title {
+        padding:0 3.5rem 1.5rem;
+        clip-path:ellipse(100% 85% at 35% 0%)
+    }
+
+    h1.page-title {
+        color:white;
+        font-size:3rem;
+        font-weight:800;
+        letter-spacing:.0625rem;
+        padding:.25rem 0;
+    }
+
+    h2.page-title {
+        color:white;
+        font-size:1.5rem;
+        font-weight:400;
+        padding-bottom:2rem;
+    }
 }
