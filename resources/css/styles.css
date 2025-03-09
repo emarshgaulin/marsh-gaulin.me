@@ -94,6 +94,7 @@ body {
         font-family:'Merriweather', serif;
         font-weight:800;
         margin:.5rem;
+        letter-spacing:.0625rem;
     }
 
     h2.page-title {
@@ -217,7 +218,6 @@ body {
     .navItem {
         flex-grow:1;
         flex-shrink:1;
-        background-color:rgba(255,255,255,10%);
         text-align:center;
         margin:0 .5rem;
     }
@@ -225,17 +225,50 @@ body {
     .navItem a {
         display:block;
         color:rgba(255,255,255,75%);
+        background-color:rgba(255,255,255,10%);
         width:100%;
+        padding:.25rem;
     }
 
+    .navItem a:hover {
+        background-color:rgba(255,255,255,25%);
 
+    }
+
+    .navItem a:active {
+        background-color:rgba(255,255,255,40%);
+        color:white;
+    }
 
     /* Page Title and Main Content */
+    .page-title {
+        color:white;
+        text-align:center; 
+    }
+
     div.page-title {
         background-image:url('../masthead-2b-medium.png');
         background-size:100% auto;
         background-position:center top;
     }
+
+    h1.page-title {
+        font-size:2.5rem;
+        font-weight:800;
+        letter-spacing:.0625rem;
+        font-family:'Merriweather';
+        width:100%;
+        padding-bottom:.5rem;
+    }
+
+    h2.page-title {
+        font-size:1.25rem;
+        font-weight:400;
+        font-family:'Merriweather';
+        width:100%;
+        padding:.25rem 0 2rem;
+    }
+
 }
 
 /* Large Screen Styling */
