@@ -339,12 +339,6 @@ a.footer-title {
         font-size:16px;
     }
 
-    div.page-title {
-        background-image:url('../masthead-2b-large.png');
-        background-size:100% auto;
-        background-position:center top;
-    }
-
     /* Header and Nav Bar */
     header {
         position:sticky;
@@ -383,7 +377,10 @@ a.footer-title {
     /* Page Title and Main Content */
     div.page-title {
         padding:0 3.5rem 1.5rem;
-        clip-path:ellipse(100% 85% at 35% 0%)
+        clip-path:ellipse(100% 85% at 35% 0%);
+        background-image:url('../masthead-2b-large.png');
+        background-size:100% auto;
+        background-position:center top;
     }
 
     h1.page-title {
@@ -399,5 +396,53 @@ a.footer-title {
         font-size:1.5rem;
         font-weight:400;
         padding-bottom:2rem;
+    }
+
+    section.body-content {
+        padding: .25rem 3.5rem;
+    }
+
+    #home-intro h3 {
+        font-size:1.75rem;
+    }
+    
+    #home-intro p {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        margin:.5rem 0;
+    }
+
+    #home-links-container {
+        flex-direction:row;
+        justify-content:space-between;
+        margin:1rem 0 3rem;
+    }
+
+    div.home-link {
+        flex-direction:column;
+        width:30%;
+    }
+
+    .home-link-img {
+        width:100%;
+    }
+
+    .home-link-caption {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        margin:1rem 0;
+    }
+
+    /* Footer */
+    footer {
+        padding:3.5rem;
+    }
+
+    div.footer-title {
+        text-align:center;
+    }
+
+    #footer-logo {
+        height:3rem;
     }
 }
