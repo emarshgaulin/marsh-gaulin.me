@@ -54,6 +54,15 @@ body {
     color:white;
 }
 
+footer {
+    background-color:black;
+}
+
+a.footer-title {
+    color:white;
+    text-decoration:none;
+}
+
 /* Small Screen Styling */
 @media screen and (max-width:1199px) {
 
@@ -175,17 +184,11 @@ body {
 
     /* Footer */
     footer {
-        background-color:black;
         padding:1.5rem;
     }
 
     #footer-logo {
         height:2rem;
-    }
-
-    a.footer-title {
-        color:white;
-        text-decoration:none;
     }
 
     div.footer-title {
@@ -315,6 +318,18 @@ body {
         height:4rem;
     }
 
+    /* Footer */
+    footer {
+        padding:2rem;
+    }
+
+    div.footer-title {
+        text-align:center;
+    }
+
+    #footer-logo {
+        height:3rem;
+    }
 }
 
 /* Large Screen Styling */
