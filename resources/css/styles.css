@@ -27,6 +27,28 @@ main {
     font-style:italic;
 }
 
+a {
+    color:#58a4b0;
+}
+
+a:visited {
+    color:#a9bcd0;
+}
+
+.primary-divider {
+    margin:1rem;
+    background-color:#3c4b61;
+    height:2pt;
+    border:1pt solid #3c4b61;
+}
+
+.secondary-divider {
+    margin:1rem 2rem;
+    height:1pt;
+    border:1pt solid #d8dbe2;
+    background-color:#d8dbe2;
+}
+
 #home-links-container {
     display:flex;
 }
@@ -114,6 +136,12 @@ a.footer-title {
     height:1000px;
     border:none;
 }
+
+/* CV Page */
+#cv-mobile-only {
+    display:none;
+}
+
 /* Small Screen Styling */
 @media screen and (max-width:1199px) {
 
@@ -272,6 +300,72 @@ a.footer-title {
 
     #contact-form-container {
         width:100%;
+    }
+
+    /* CV Page */
+    #cv-mobile-only {
+        display:block;
+        font-size:48px;
+        padding:1rem;
+        margin:1rem;
+        border:3px solid #3c4b61;
+    }
+
+    #cv-professional, #cv-education {
+        margin:1.5rem;
+    }
+
+    .cv-section {
+        text-transform:uppercase;
+        font-weight:400;
+        font-size:1.75rem;
+    }
+
+    .cv-entry {
+        font-weight:600;
+        font-size:1.5rem;
+        padding:1rem 1.25rem .5rem 1.25rem;
+    }
+
+    .cv-entry-subhead {
+        font-weight:300;
+        font-style:oblique;
+        padding:0 1.25rem 0 2rem;
+        font-size:1.25rem;
+    }
+
+    .cv-entry-info {
+        color:grey;
+        font-weight:300;
+        font-size:1.125rem;
+        padding:0 1.25rem .25rem 2rem;
+    }
+
+    .cv-entry-details {
+        font-family:'Merriweather Sans';
+        font-weight:300;
+        font-size:1rem;
+        padding:0 1.25rem .25rem 3rem;
+    }
+
+    .cv-job-task {
+        padding-bottom:.375rem;
+    }
+
+    .cv-list-head {
+        font-family:'Merriweather Sans';
+        font-weight:300;
+        padding:0 1.25rem .25rem 3rem;
+    }
+
+    .cv-notable-accomplishments {
+        font-family:'Merriweather Sans';
+        font-weight:300;
+        padding:0 0 .5rem 4rem;
+    }
+
+    .cv-notable-accomplishments li {
+        padding-bottom:.375rem;
     }
 
 }
@@ -444,8 +538,67 @@ a.footer-title {
     }
 
     #contact-form-container {
-        flex-grow:2;
+        flex-grow:3;
     }
+
+    /* CV Page */
+    #cv-professional, #cv-education {
+        margin:2rem 3rem;
+    }
+
+    .cv-section {
+        text-transform:uppercase;
+        font-weight:400;
+        font-size:1.75rem;
+        padding-bottom:.25rem;
+    }
+
+    .cv-entry {
+        font-weight:600;
+        font-size:1.375rem;
+        padding: .25rem 0 .125rem 1rem;
+    }
+
+    .cv-entry-subhead {
+        font-weight:400;
+        font-size:1.125rem;
+        font-style:oblique;
+        padding:.25rem 0 0 2rem;
+    }
+
+    .cv-entry-info {
+        color:gray;
+        font-weight:400;
+        padding: 0 0 .25rem 2rem;
+    }
+
+    .cv-entry-details {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        padding:0 0 .25rem 4rem;
+    }
+
+    .cv-job-task {
+        padding-bottom:.25rem;
+    }
+
+    .cv-list-head {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        padding-left:4rem;
+    }
+
+    .cv-notable-accomplishments {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        padding: 0 0 .5rem 4rem;
+        list-style-position:inside;
+    }
+
+    .cv-notable-accomplishments li {
+        padding-bottom:.25rem;
+    }
+
 }
 
 /* Large Screen Styling */
@@ -597,11 +750,66 @@ a.footer-title {
     }
 
     #contact-form-container {
-        flex-grow:2;
+        flex-grow:3;
         float:left;
     }
 
     .contact-link, .contact-type {
         font-size:1.25rem;
     }
+
+    /* CV Page */
+    #cv-professional, #cv-education {
+        padding:2rem 4rem;
+    }
+
+    .cv-section {
+        text-transform:uppercase;
+        font-weight:400;
+        font-size:1.75rem;
+        padding-bottom:.5rem;
+    }
+
+    .cv-entry {
+        font-weight:600;
+        font-size:1.25rem;
+        padding:.25rem 0 .25rem 1rem;
+    }
+
+    .cv-entry-subhead {
+        font-weight:400;
+        font-size:1.125rem;
+        font-style:oblique;
+        padding:.125rem 0 0 2.25rem;
+    }
+
+    .cv-entry-info {
+        color:gray;
+        font-weight:400;
+        padding:0 0 .25rem 2.25rem;
+        font-size:1.125rem;
+    }
+
+    .cv-entry-details {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        padding: .25rem 0 .25rem 3.5rem;
+    }
+
+    .cv-job-task {
+        padding-bottom:.25rem;
+    }
+
+    .cv-list-head {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        padding-left:3.5rem;
+    }
+
+    .cv-notable-accomplishments {
+        font-family:'Merriweather Sans';
+        font-weight:350;
+        padding:.25rem 0 .5rem 4.5rem;
+    }
+
 }
