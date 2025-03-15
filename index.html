@@ -2,14 +2,23 @@
 <html>
     <head>
         <!DOCTYPE html>
-        <title>Marsh-Gaulin Creative</title>
+        <title>EMG Design & Development</title>
         <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="/resources/favicon.png">
         <link href="/resources/css/styles.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="description" content="Creating visual and written content that communicates effectively and drives viewers to action | Graphic design, copywriting, strategic marketing | Hartford, CT">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="description" content="Creating visual and written content that communicates effectively and drives viewers to action | Graphic design, copywriting, strategic marketing | Hartford, CT">        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PSWWG2WGR"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8PSWWG2WGR');
+        </script>
     </head>
     <body>
         <header>
@@ -17,13 +26,13 @@
             <nav>
                 <ul id="navLinks">
                     <li class="navItem">
-                        <a href="#">About</a>
+                        <a href="/about/">About</a>
                     </li>
                     <li class="navItem">
-                        <a href="#">Technology Work</a>
+                        <a href="/technology/">Technology Work</a>
                     </li>
                     <li class="navItem">
-                        <a href="#">Creative Work</a>
+                        <a href="/creative/">Creative Work</a>
                     </li>
                     <li class="navItem">
                         <a href="/contact/">Contact</a>
@@ -33,7 +42,7 @@
         </header>
         <main>
             <div id="page-title-container">
-                <h1 id="site-title">Marsh-Gaulin Creative</h1>
+                <h1 id="site-title">Emily Marsh-Gaulin</h1>
                 <h2 id="site-subtitle">Front-End Development, Copywriting, Graphic Design & Illustration</h2>
             </div>
             <section class="body-content" id="home-intro">
@@ -43,17 +52,17 @@
             </section>
             <section class="body-content" id="home-links-container">
                 <div class="home-link">
-                    <img src="./resources/portfolio-cover.png" class="home-link-img">
+                    <a href="/creative/"><img src="./resources/portfolio-cover.png" class="home-link-img" alt="Image of a book on a table with a cover reading 'Selected Works'"></a>
                     <p class="home-link-caption">Take a look through my <span class="call-out">past</span> professional, personal, and academic creative projects.</p>
-                    <button type="button" class="home-link-button">Portfolio</button>
+                    <a class="home-link-button" title="Portfolio" href="/creative/"><button type="button" class="home-link-button">Portfolio</button></a>
                 </div>
                 <div class="home-link">
-                    <img src="./resources/about-v1.jpg" class="home-link-img">
+                    <a href="/about/"><img src="./resources/about-v1.jpg" class="home-link-img"></a>
                     <p class="home-link-caption">Find out who I am, what I do, and how I got to the <span class="call-out">present</span> in my bio and employment history.</p>
-                    <button type="button" class="home-link-button">About</button>
+                    <a class="home-link-button" title="About" href="/about/"><button type="button" class="home-link-button">About</button></a>
                 </div>
                 <div class="home-link">
-                    <img src="./resources/contact.jpg" class="home-link-img">
+                    <a href="/contact/"><img src="./resources/contact.jpg" class="home-link-img" alt="Image of a hand holding a corded telephone on a yellow background"></a>
                     <p class="home-link-caption">Reach out to inquire about a <span class="call-out">future</span> project, partnership, or full-time employment.</p>
                     <a class="home-link-button" title="Contact Me" href="/contact/"><button type="button" class="home-link-button">Contact</button></a>
                 </div>
