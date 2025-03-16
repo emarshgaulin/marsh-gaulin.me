@@ -96,6 +96,30 @@ a.footer-title {
     text-decoration:none;
 }
 
+.cta-contactme {
+    display:block;
+    text-decoration:none;
+    background-color:#3c4b61;
+    color:white;
+    text-align:center;
+    font-size:1.5rem;
+    padding:1rem;
+    border-radius:1rem;
+}
+
+.cta-contactme:hover {
+    background-color:#a9bcd0;
+}
+
+.cta-contactme:active {
+    background-color:#58a4b0;
+}
+
+.section-title {
+    font-size:1.625rem;
+    padding-bottom:.25rem;
+}
+
 /* Contact Me */
 #contact-page-container {
     display:flex;
@@ -140,6 +164,23 @@ a.footer-title {
 /* CV Page */
 #cv-mobile-only {
     display:none;
+}
+
+/* About Me */
+#cert-container {
+    display:flex;
+}
+
+.cert-badge {
+    display:flex;
+    flex-direction:column;
+}
+
+#about-me-section1 p, #about-me-section2 p {
+    font-family:'Merriweather Sans';
+    font-weight:350;
+    line-height:1.375rem;
+    padding:.25rem 0 .25rem;
 }
 
 /* Small Screen Styling */
@@ -366,6 +407,30 @@ a.footer-title {
 
     .cv-notable-accomplishments li {
         padding-bottom:.375rem;
+    }
+
+    /* About Me */
+    #cert-container {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cert-badge {
+        width:80%;
+        align-items:center;
+        margin:1rem 0 1.5rem;
+    }
+
+    .cert-badge-image {
+        width:60%;
+        margin-bottom:.75rem;
+    }
+
+    .cert-badge-caption {
+        text-align:center;
+        font-family:'Merriweather Sans';
+        font-weight:300;
+        font-size:.875rem;
     }
 
 }
@@ -599,6 +664,31 @@ a.footer-title {
         padding-bottom:.25rem;
     }
 
+    /* About Me */
+    #cert-container {
+        flex-flow: row wrap;
+        justify-content:space-around;
+    }
+
+    .cert-badge {
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items:center;
+        width:30%;
+        margin: 2rem auto 2rem;
+    }
+
+    .cert-badge-image {
+        width:12rem;
+        margin-bottom:.5rem;
+    }
+    
+    .cert-badge-caption {
+        width:100%;
+        text-align:center;
+        font-family:'Merriweather Sans';
+        font-weight:300;
+    }
 }
 
 /* Large Screen Styling */
@@ -810,6 +900,50 @@ a.footer-title {
         font-family:'Merriweather Sans';
         font-weight:350;
         padding:.25rem 0 .5rem 4.5rem;
+    }
+
+    /* About Me */
+
+    #cert-container {
+        flex-flow: row wrap;
+        justify-content:space-around;
+    }
+
+    .cert-badge {
+        flex-flow: column nowrap;
+        align-items:center;
+        margin:2rem 3rem 2rem;
+    }
+
+    .cert-badge-image {
+        width:16rem;
+    }
+
+    .cert-badge-caption {
+        width:24rem;
+        font-family:'Merriweather Sans';
+        font-weight:300;
+        text-align:center;
+    }
+
+    #about-me-section1, #about-me-section2 {
+        padding: 1rem 3.5rem;
+    }
+    
+    #about-me-section2 {
+        clear:right;
+    }
+
+    #aboutme-img1 {
+        float:right;
+        width:15%;
+        margin:0 2rem;
+    }
+
+    #aboutme-img2 {
+        float:left;
+        width:20%;
+        margin:2rem 2rem 0 0;
     }
 
 }
