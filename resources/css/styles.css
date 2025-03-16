@@ -176,7 +176,7 @@ a.footer-title {
     flex-direction:column;
 }
 
-#about-me-section1 p, #about-me-section2 p {
+#aboutme-section1 p, #aboutme-section2 p {
     font-family:'Merriweather Sans';
     font-weight:350;
     line-height:1.375rem;
@@ -431,6 +431,30 @@ a.footer-title {
         font-family:'Merriweather Sans';
         font-weight:300;
         font-size:.875rem;
+    }
+
+    #aboutme-img1 {
+        width:100%;
+        margin:1rem 0;
+    }
+
+    #aboutme-section1 p, #aboutme-section2 p {
+        font-size:1.25rem;
+        line-height:1.75rem;
+        padding-bottom:1.5rem;
+    }
+
+    #aboutme-section1 .section-title {
+        text-align:center;
+    }
+
+    #aboutme-img2 {
+        width:100%;
+    }
+
+    #aboutme-section2 .section-title {
+        text-align:center;
+        padding:1rem 0;
     }
 
 }
@@ -689,6 +713,28 @@ a.footer-title {
         font-family:'Merriweather Sans';
         font-weight:300;
     }
+
+    #aboutme-img1 {
+        float:right;
+        width:30%;
+        max-width:20rem;
+        margin: 0 0 2rem 2rem;
+    }
+
+    #aboutme-section2 {
+        clear:right;
+    }
+
+    #aboutme-img2 {
+        float:left;
+        width:25%;
+        margin: 0 2rem 2rem 0;
+    }
+
+    .cta-contactme {
+        clear:both;
+        margin:4rem;
+    }
 }
 
 /* Large Screen Styling */
@@ -903,7 +949,6 @@ a.footer-title {
     }
 
     /* About Me */
-
     #cert-container {
         flex-flow: row wrap;
         justify-content:space-around;
@@ -926,12 +971,18 @@ a.footer-title {
         text-align:center;
     }
 
-    #about-me-section1, #about-me-section2 {
+    #aboutme-section1, #aboutme-section2 {
         padding: 1rem 3.5rem;
     }
-    
-    #about-me-section2 {
+
+    #aboutme-section2 {
         clear:right;
+    }
+
+    #aboutme-cta {
+        clear:left;
+        width:25%;
+        margin:1rem 37.5% 2rem 37.5%;
     }
 
     #aboutme-img1 {
@@ -943,7 +994,7 @@ a.footer-title {
     #aboutme-img2 {
         float:left;
         width:20%;
-        margin:2rem 2rem 0 0;
+        margin:.625rem 2rem 2rem 0;
     }
 
 }
