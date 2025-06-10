@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marsh-Gaulin Creative</title>
+        <meta name="description" content="lorem ipsum dolor sit amet">
+        <!--#include virtual="/resources/ssi/site-head.html" -->
+    </head>
+    <body>
+        <header>
+            <!--#include virtual="/resources/ssi/page-header.html" -->
+            <div id="page-title-container">
+                <h1 id="site-title">Marsh-Gaulin Creative</h1>
+                <h2 id="site-subtitle">Front-End Development, Copywriting, Graphic Design &amp; Illustration</h2>
+            </div>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
