@@ -1,0 +1,85 @@
+/* 1. Site-Wide Styles */
+html {
+    font-size:18px;
+}
+
+/* 1a. Site Header & Nav */
+header {
+    background-image:url('/resources/images/masthead-2a-large.png');
+    background-color:var(--emgmediumblue);
+    background-size:cover;
+    background-position:center bottom;
+    display:flex;
+    flex-direction:column;
+    position:sticky;
+    top:0;
+}
+
+a.header-logo {
+    align-self:center;
+    margin:2rem 1rem 1rem;
+}
+
+img.header-logo {
+    height:3rem;
+}
+
+#nav-links {
+    padding:0 2rem 1.5rem;;
+}
+
+li.nav-item {
+    display:inline-block;
+}
+
+li.nav-item:not(:last-child) {
+    padding-right:3.5rem;
+}
+
+a.nav-item:hover {
+    text-decoration:underline;
+}
+
+a.nav-item:active {
+    color:var(--emglightestblue);
+}
+
+/* 1b. Generic Site-Wide Body Styles */
+#page-title-container {
+    background-image:url('/resources/images/masthead-2b-large.png');
+    background-color:var(--emgmediumblue);
+    background-size:cover;
+    background-position:center top;
+    padding:1rem 2rem 2rem;
+}
+
+.section-container {
+    padding:2rem;
+}
+
+h2.section-title {
+    font-size:1.75rem;
+    padding-bottom:.75rem;
+}
+
+p.body-copy:not(:last-child) {
+    padding-bottom:.5rem;
+}
+
+.section-divider {
+    margin: 0 3rem;
+}
+
+/* 2. Home Page Styles */
+#site-title {
+    font-size:4.5rem;
+    padding-bottom:.5rem;
+}
+
+#site-subtitle {
+    font-family:'Merriweather Sans', 'Arial', sans-serif;
+    font-weight:400;
+    font-style:italic;
+    font-size:1.75rem;
+    padding-bottom:.5rem;
+}

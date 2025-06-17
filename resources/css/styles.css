@@ -8,8 +8,58 @@
     --emgcontrastcolor:#db7f67;
 }
 
-/* Universal Styling */
+/* Site-wide Styles */
 * {
     padding:0;
     margin:0;
+}
+
+body {
+    font-family: 'Merriweather', 'Georgia', serif;
+    background-color:black;
+}
+
+main {
+    background-color:white;
+    width:100%;
+}
+
+p {
+    font-family: 'Merriweather Sans', 'Arial', sans-serif;
+}
+
+nav {
+    color:white;
+}
+
+#nav-menu-icon-container {
+    display:none;
+}
+
+li.nav-item {
+    list-style-type:none;
+}
+
+a.nav-item {
+    text-decoration:none;
+    color:white;
+}
+
+p.body-copy {
+    font-weight:300;
+}
+
+.section-divider {
+    border: 2px solid var(--emglightblue);
+    border-radius:2px;
+}
+
+/* Home Page Styles */
+#page-title-container {
+    color:white;
+}
+
+/* temp */
+.home-page-CTA-image {
+    display:none;
 }
