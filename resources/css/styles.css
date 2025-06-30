@@ -6,6 +6,8 @@
     --emglightestblue:#d8dbe2;
     --emgaltblue:#58a4b0;
     --emgcontrastcolor:#db7f67;
+    --emgcontrastlight:#e49d8b;
+    --emgcontrastdark:#d46549;
 }
 
 /* Site-wide Styles */
@@ -24,6 +26,10 @@ main {
     width:100%;
 }
 
+footer {
+    background-color:black;
+}
+
 p {
     font-family: 'Merriweather Sans', 'Arial', sans-serif;
 }
@@ -36,7 +42,7 @@ nav {
     display:none;
 }
 
-li.nav-item {
+li.nav-item, li.footer-links {
     list-style-type:none;
 }
 
@@ -49,9 +55,29 @@ p.body-copy {
     font-weight:300;
 }
 
+.call-out {
+    font-weight:500;
+    color:var(--emgblue);
+    font-style:italic;
+}
+
 .section-divider {
     border: 2px solid var(--emglightblue);
     border-radius:2px;
+}
+
+a.footer-title, a.footer-links, div.footer-copyright {
+    color:white;
+    text-decoration:none;
+}
+
+a.footer-links:active {
+    color:var(--emglightblue);
+    text-decoration:underline;
+}
+
+a.footer-links:hover {
+    color:var(--emgcontrastlight);
 }
 
 /* Home Page Styles */
@@ -59,7 +85,33 @@ p.body-copy {
     color:white;
 }
 
-/* temp */
-.home-page-CTA-image {
-    display:none;
+#home-page-CTA-section {
+    display:flex;
+}
+
+.home-page-CTA-card {
+    display:flex;
+    flex-direction:column;
+    background-color:var(--emglightestblue);
+}
+
+.home-page-CTA-copy {
+    font-weight:350;
+}
+
+.home-page-CTA-button {
+    background-color:var(--emgcontrastcolor);
+    border-width:4px;
+    border-style:outset;
+    border-color:var(--emgblue);
+}
+
+.home-page-CTA-button:hover {
+    background-color:var(--emgcontrastlight);
+    border-color:var(--emgmediumblue) var(--emgblue) var(--emgblue) var(--emgmediumblue);
+}
+
+.home-page-CTA-button:active {
+    background-color:var(--emgcontrastdark);
+    border-color:var(--emgblue) var(--emgmediumblue) var(--emgmediumblue) var(--emgblue);
 }

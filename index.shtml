@@ -25,18 +25,24 @@
             <section class="section-container" id="home-page-CTA-section">
                 <div class="home-page-CTA-card">
                     <img class="home-page-CTA-image" src="/resources/images/portfolio-cover.png" alt="a mockup of a book whose cover contains several graphic design projects and text reading 'selected works'">
-                    <p class="home-page-CTA-copy">Take a look through my <span class="call-out">past</span> professional, personal, and academic creative projects.</p>
-                    <a class= "home-page-CTA-link" href="/work/"><button class="home-page-CTA-button">Portfolio</button></a>
+                    <div class="home-page-CTA-subtitle">
+                        <p class="home-page-CTA-copy">Take a look through my <span class="call-out">past</span> professional, personal, and academic creative projects.</p>
+                        <a class= "home-page-CTA-link" href="/work/"><button class="home-page-CTA-button">Portfolio</button></a>
+                    </div>
                 </div>
                 <div class="home-page-CTA-card">
                     <img class="home-page-CTA-image" src="/resources/images/about-v1.jpg" alt="a woman with died silver hair sits in front of a grafitti wall looking down at a drawing tablet in her hands">
-                    <p class="home-page-CTA-copy">Find out who I am, what I do, and how I got to the <span class="call-out">present</span> in my bio and employment history.</p>
-                    <a class="home-page-CTA-link" href="/abpit/"><button class="home-page-CTA-button">About</button></a>
+                    <div class="home-page-CTA-subtitle">
+                        <p class="home-page-CTA-copy">Find out who I am, what I do, and how I got to the <span class="call-out">present</span> in my bio and employment history.</p>
+                        <a class="home-page-CTA-link" href="/about/"><button class="home-page-CTA-button">About</button></a>
+                    </div>
                 </div>
                 <div class="home-page-CTA-card">
-                    <img class="home-page-CTA-image" src="/resources/images/contact.jpg" alt="a hand holding a telephone with the phone cord wrapped around the arm">
-                    <p class="home-page-CTA-copy">Reach out to inquire about a <span class="call-out">future</span> project, partnership, or full-time position.</p>
-                    <a class="home-page-CTA-link" href="/contact/"><button class="home-page-CTA-button">Contact</button></a>
+                    <img class="home-page-CTA-image" src="/resources/images/contact.jpg" alt="a hand holding a telephone handset">
+                    <div class="home-page-CTA-subtitle">
+                        <p class="home-page-CTA-copy">Reach out to inquire about a <span class="call-out">future</span> project, partnership, or full-time position.</p>
+                        <a class="home-page-CTA-link" href="/contact/"><button class="home-page-CTA-button">Contact</button></a>
+                    </div>
                 </div>
             </section>
         </main>
