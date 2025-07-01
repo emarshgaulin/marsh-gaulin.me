@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Under Construction &verbar; Marsh-Gaulin Creative</title>
+        <meta name="description" content="Creating visual and written content that communicates effectively and drives viewers to action &verbar; Graphic design, copywriting, strategic marketing">
+        <!--#include virtual="/resources/ssi/site-head.html"-->
+    </head>
+    <body>
+        <header>
+            <!--#include virtual="/resources/ssi/page-header.html"-->
+        </header>
+        <main>
+            <section id="page-title-container">
+                <h1 id="page-title"><span class="fa-solid fa-hammer"></span> Under Construction <span class="fa-solid fa-hammer"></span></h1>
+                <h2 id="page-subtitle">The page you've tried to reach isn't quite ready yet.</h2>
+            </section>
+            <section class="section-container">
+                <h2 class="section-title">Sorry about that!</h2>
+                <p class="body-copy">I'm still trying to get this freelancing website up and running, and it looks like I'm not yet at 100%.</p>
+                <p class="body-copy"><a href="/contact/">Contact me</a> via my website or by email at <a href="mailto:emily@marsh-gaulin.me">emily@marsh-gaulin.me</a> for more information.</p>
+            </section>
+        </main>
+        <footer>
+            <!--#include virtual="/resources/ssi/page-footer.html"-->
+        </footer>
+    </body>
+</html>
